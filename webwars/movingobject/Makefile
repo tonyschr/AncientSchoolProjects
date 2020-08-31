@@ -1,0 +1,46 @@
+# $Revision$
+
+JC=	javac
+CLASS= Asteroid.class Environment.class MissileWeapon.class \
+MovingObject.class MODescriptor.class ProxBombWeapon.class \
+Planet.class Reward.class Spinner.class Vehicle.class \
+ShotWeapon.class
+
+app:
+	@make $(CLASS)
+
+Asteroid.class: Asteroid.java
+	${JC} Asteroid.java
+
+Environment.class: Environment.java
+	${JC} Environment.java
+
+MissileWeapon.class: MissileWeapon.java
+	${JC} MissileWeapon.java
+
+MovingObject.class: MovingObject.java
+	${JC} MovingObject.java
+
+ProxBombWeapon.class: ProxBombWeapon.java
+	${JC} ProxBombWeapon.java
+
+Planet.class: Planet.java
+	${JC} Planet.java
+
+Reward.class: Reward.java
+	${JC} Reward.java
+
+ShotWeapon.class: ShotWeapon.java
+	${JC} ShotWeapon.java
+
+Spinner.class: Spinner.java
+	${JC} Spinner.java
+
+Vehicle.class: Vehicle.java
+	${JC} Vehicle.java
+
+
+
+clean:
+	rm -rf *.class *~ *.jar
+
